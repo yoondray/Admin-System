@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.me.Mapper.MemberDAO">
+
+	<insert id="mwrite">
+	 insert into tb1_member (id, name, gender, email, birth, pw)
+	 values (#{id}, #{name}, #{gender}, #{email}, #{birth}, #{pw});
+	</insert>
+	
+	<select id="meinfo" resultType="com.me.DTO.MemberDTO">
+	select id, name, birth, email, regiDate 
+	from (
+			select @rownum:=@rownum+1 as rownum, b.*
+			from (select @rownum:=0) as tmp, tb1_member as b
+			<if test='type=="i"'>
+			where id like concat('%',#{meword},'%')
+			</if>
+			<if test='type=="e"'>
+			where id like concat('%',#{meword},'%')
+			</if>
+			order by id desc
+		) as mblistPage
+	<![CDATA[
+		where rownum>(#{pageNo}-1)*#{index} and rownum<=#{pageNo}*#{index};]]>
+	</select>
+	
+	<select id="mdetail" resultType="com.me.DTO.MemberDTO">
+	select * from tb1_member where id=#{id};
+	</select>
+	
+	<update id="mupdate">
+	update tb1_member 
+	set pw=#{pw}, name=#{name}, email=#{email}, updateDate=sysdate()
+	where id=#{id}; 
+	</update>
+	
+	<delete id="mdelete">
+	delete from tb1_member where id=#{id};
+	</delete>
+	
+	<select id="getResult" resultType="int">
+	select count(*) from tb1_member
+	</select>
+	
+</mapper>

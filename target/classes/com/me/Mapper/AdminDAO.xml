@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.me.Mapper.AdminDAO">
+
+
+
+	<select id="epogin" resultType="com.me.DTO.AdminDTO">
+	select * from tb1_admin where empNo=#{empNo} and empPw=#{empPw};
+	</select>
+
+	<select id="epinfo" resultType="com.me.DTO.AdminDTO">
+	select eName, dt.deptNo, dt.dName, salary, hireDate
+	from tb1_admin ad, tb1_dept dt
+	where ad.deptNo = dt.deptNo;
+	</select>
+
+</mapper>

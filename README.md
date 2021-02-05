@@ -4,9 +4,9 @@ This data indicates each website has a huge range of Members.
 :white_check_mark: How to manage a lot of Members and following member's info more effectively?
 <br>
 
-![Dashboard 1 (1)](https://user-images.githubusercontent.com/74237804/106974667-74f78300-6798-11eb-9bd5-8c2f32ad7d26.png)
-
-[https://public.tableau.com/profile/yoo.park#!/?newProfile=&activeTab=0](url) by **@yoondray** 
+<div class='tableauPlaceholder' id='viz1612526835210' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IndividualsusingtheInternet2015-2019&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IndividualsusingtheInternet2015-2019&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IndividualsusingtheInternet2015-2019&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko' /></object></div><br>             
+source :  ITU World Telecommunication/ICT Indicators database
+by **@yoondray** 
 <br><br>
 
 ##  :computer:Stack

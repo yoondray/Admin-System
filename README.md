@@ -1,7 +1,7 @@
 # How to manage Members?
 Individuals using the Internet has been continuously increased.
 This data indicates each website has a huge range of Members.
-:white_check_mark: How to manage effectively a lot of Members and following member's info?
+:white_check_mark: How to manage a lot of Members and following member's info more effectively?
 <br>
 
 ![Dashboard 1 (1)](https://user-images.githubusercontent.com/74237804/106974667-74f78300-6798-11eb-9bd5-8c2f32ad7d26.png)

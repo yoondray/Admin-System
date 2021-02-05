@@ -1,6 +1,6 @@
 # How to manage Members?
 Individuals using the Internet has been continuously increased.
-This data indicates each website has a huge range of Members.<br>
+This data indicates each website has a huge range of Members.
 :white_check_mark: How to manage effectively a lot of Members and following member's info?
 <br>
 
